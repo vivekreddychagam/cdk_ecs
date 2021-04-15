@@ -1,0 +1,1124 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "EcsCdkStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "EcsCdkStack.template.json"
+      },
+      "metadata": {
+        "/EcsCdkStack/Vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Vpc8378EB38",
+            "trace": [
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1215:21)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1Subnet5C2D37C4",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTable6C95E38E",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1RouteTableAssociation97140677",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1DefaultRoute3DA9E72A",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1EIPD7E02669",
+            "trace": [
+              "PublicSubnet.addNatGateway (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1776:21)",
+              "NatGatewayProvider.configureNat (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:209:27)",
+              "Vpc.createNatGateways (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet1NATGateway4D7517AA",
+            "trace": [
+              "PublicSubnet.addNatGateway (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1774:17)",
+              "NatGatewayProvider.configureNat (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:209:27)",
+              "Vpc.createNatGateways (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2Subnet691E08A3",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTable94F7E489",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2RouteTableAssociationDD5762D8",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2DefaultRoute97F91067",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2EIP3C605A87",
+            "trace": [
+              "PublicSubnet.addNatGateway (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1776:21)",
+              "NatGatewayProvider.configureNat (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:209:27)",
+              "Vpc.createNatGateways (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPublicSubnet2NATGateway9182C01D",
+            "trace": [
+              "PublicSubnet.addNatGateway (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1774:17)",
+              "NatGatewayProvider.configureNat (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:209:27)",
+              "Vpc.createNatGateways (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1Subnet536B997A",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableB2C5B500",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1RouteTableAssociation70C59FA6",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet1DefaultRouteBE02A9ED",
+            "trace": [
+              "PrivateSubnet.addRoute (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:222:12)",
+              "NatGatewayProvider.configureNat (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:215:12)",
+              "Vpc.createNatGateways (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2Subnet3788AAA1",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableA678073B",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2RouteTableAssociationA89CAD56",
+            "trace": [
+              "new Subnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "availabilityZones.forEach (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1372:12)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcPrivateSubnet2DefaultRoute060D2087",
+            "trace": [
+              "PrivateSubnet.addRoute (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:222:12)",
+              "NatGatewayProvider.configureNat (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:215:12)",
+              "Vpc.createNatGateways (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcIGWD7BA715C",
+            "trace": [
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1251:19)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/Vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "VpcVPCGWBF912B6E",
+            "trace": [
+              "new Vpc (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1257:19)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:15:11)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-exec-role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapiexecrole9CD0FE1F",
+            "trace": [
+              "new Role (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:16:22)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-exec-role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapiexecroleDefaultPolicy58DEFEF0",
+            "trace": [
+              "new Policy (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:20:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/social-api-cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "socialapicluster6E07F12E",
+            "trace": [
+              "new Cluster (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/cluster.ts:153:21)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:32:21)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-task/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapitask0EA11EF7",
+            "trace": [
+              "new TaskDefinition (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:363:21)",
+              "new FargateTaskDefinition (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.ts:111:5)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:33:21)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-task/search-api-container": [
+          {
+            "type": "aws:cdk:warning",
+            "data": "Proper policies need to be attached before pulling from ECR repository, or use 'fromEcrRepository'.",
+            "trace": [
+              "Annotations.addMessage (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/annotations.ts:92:25)",
+              "Annotations.addWarning (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/annotations.ts:31:10)",
+              "RepositoryImage.bind (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/images/repository.ts:44:29)",
+              "new ContainerDefinition (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/container-definition.ts:414:36)",
+              "FargateTaskDefinition.addContainer (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.ts:478:12)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:48:29)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-nlb/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapinlb25AE82B3",
+            "trace": [
+              "new BaseLoadBalancer (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.ts:208:22)",
+              "new NetworkLoadBalancer (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/nlb/network-load-balancer.ts:109:5)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:60:16)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-nlb/search-api-listener/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapinlbsearchapilistener72DC346F",
+            "trace": [
+              "new BaseListener (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.ts:109:22)",
+              "new NetworkListener (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/nlb/network-listener.ts:171:5)",
+              "NetworkLoadBalancer.addListener (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/nlb/network-load-balancer.ts:122:12)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:67:25)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-nlb/search-api-listener/search-api-tgGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapinlbsearchapilistenersearchapitgGroupEFBCC768",
+            "trace": [
+              "new TargetGroupBase (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.ts:241:21)",
+              "new NetworkTargetGroup (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/nlb/network-target-group.ts:74:5)",
+              "NetworkListener.addTargets (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/nlb/network-listener.ts:236:19)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:92:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapisgB52DBC6B",
+            "trace": [
+              "new SecurityGroup (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:402:26)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:72:22)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/search-api-fg-service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "searchapifgserviceServiceE5CD88F3",
+            "trace": [
+              "new BaseService (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.ts:376:21)",
+              "new FargateService (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.ts:153:5)",
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:83:28)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/ClusterARN: ": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ClusterARN",
+            "trace": [
+              "new EcsCdkStack (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/lib/ecs-cdk-stack.ts:99:5)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/bin/ecs-cdk.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Module.m._compile (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Object.require.extensions.(anonymous function) [as .ts] (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "main (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:689:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)",
+              "Module.load (internal/modules/cjs/loader.js:599:32)",
+              "tryModuleLoad (internal/modules/cjs/loader.js:538:12)",
+              "Function.Module._load (internal/modules/cjs/loader.js:530:3)",
+              "Function.Module.runMain (internal/modules/cjs/loader.js:742:12)",
+              "findNodeScript.then.existing (/root/.nvm/versions/node/v10.11.0/lib/node_modules/npm/node_modules/libnpx/index.js:268:14)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "construct (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5)",
+              "visit (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
+              "visit (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
+              "injectMetadataResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.App.process.once (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:273:13)",
+              "process.emit (events.js:182:13)",
+              "process.EventEmitter.emit (domain.js:442:20)",
+              "process.emit (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:121:23)"
+            ]
+          }
+        ],
+        "/EcsCdkStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "construct (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5)",
+              "visit (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
+              "visit (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
+              "injectMetadataResources (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "process.App.process.once (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (events.js:273:13)",
+              "process.emit (events.js:182:13)",
+              "process.EventEmitter.emit (domain.js:442:20)",
+              "process.emit (/mnt/c/Users/vivekananda.reddy/Documents/ecs-cdk/node_modules/source-map-support/source-map-support.js:495:21)",
+              "process.topLevelDomainCallback (domain.js:121:23)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
